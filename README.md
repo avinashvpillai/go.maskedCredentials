@@ -22,3 +22,7 @@ go build -o filename_mac_amd64.dgm
 default windows 10:
 set GOOS=windows
 set GOARCH=amd64
+
+
+build with version number:
+go build -o maskedUsernamePassword_0.0.1.exe .
