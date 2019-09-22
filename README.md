@@ -1,7 +1,7 @@
 # go.maskedUsernamePasswordInput
 accepting username &amp; masked passwork from cmd - GO language
 
-linux distribution from windows 10:
+* linux distribution from windows 10:
 Open git bash and use mentioned command OR  CMD for each OS architecture:
 set GOOS=linux set 
 GOARCH=amd64 
@@ -24,5 +24,7 @@ set GOOS=windows
 set GOARCH=amd64
 
 
-build with version number:
+* build with version number:
 go build -o maskedUsernamePassword_0.0.1.exe .
+OR
+go build -ldflags "-X main.version=v0.0.1" -o maskedUsernamePassword_0.0.1.exe .
