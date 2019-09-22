@@ -6,11 +6,21 @@ import (
 	"os"
 	"strings"
 	"syscall"
+	"time"
 
 	"golang.org/x/crypto/ssh/terminal"
 )
 
+var (
+	version   string
+	timeStamp string
+)
+
 func main() {
+	timeStamp := time.Now()
+	fmt.Println("Running version : ", version)
+	fmt.Println("Build time: ", timeStamp)
+
 	username, password := credentials()
 	fmt.Printf("Username: %s, Password: %s\n", username, password)
 }
